@@ -1,3 +1,4 @@
+package Patterns;
 
 public class Arraypairs{
     public static void pair(int [] arr){

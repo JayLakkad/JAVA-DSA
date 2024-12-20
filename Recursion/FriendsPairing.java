@@ -1,3 +1,4 @@
+package Recursion;
 public class FriendsPairing {
     public static void main(String[] args) {
         int n =3;

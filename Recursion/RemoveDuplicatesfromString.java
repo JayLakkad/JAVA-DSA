@@ -1,3 +1,4 @@
+package Recursion;
 public class RemoveDuplicatesfromString {
     public static void main(String[] args) {
         String s = "appnnacollege";

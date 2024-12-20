@@ -1,3 +1,4 @@
+package Patterns;
 public class HollowRectangle{
     public static void hollow_rectangle(int totRows,int totCols){
         //outer loop

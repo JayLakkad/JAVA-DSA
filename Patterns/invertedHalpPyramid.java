@@ -1,3 +1,4 @@
+package Patterns;
 public class invertedHalpPyramid {
     public static void inverted_half_pyramid(int Rows)
     {

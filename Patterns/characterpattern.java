@@ -1,3 +1,4 @@
+package Patterns;
 public class characterpattern {
     public static void main(String[] args) {
         int n =10;

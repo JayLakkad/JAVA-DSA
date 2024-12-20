@@ -1,3 +1,4 @@
+package Recursion;
 public class PrintSumofFirstNNaturalNo {
     public static void main(String[] args) {
         int n  =5;
