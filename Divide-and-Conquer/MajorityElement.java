@@ -1,3 +1,4 @@
+
 class Solution {
     public int majorityElement(int[] nums) {
         return majorityelement(nums,0,nums.length-1);
@@ -20,7 +21,7 @@ class Solution {
         {
             return arr[si];
         }
-        int mid = (si+ei)/2;
+        int mid = si + (ei - si)/2;
         int left = majorityelement(arr,si,mid);
         int right = majorityelement(arr,mid+1,ei);
 
@@ -35,4 +36,4 @@ class Solution {
             return result;
         }
     }
-}
+} 
