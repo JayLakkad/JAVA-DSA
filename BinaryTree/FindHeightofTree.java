@@ -46,6 +46,38 @@ public class FindHeightofTree {
         int rightsum = sumofnodes(root.right);
         return leftsum+rightsum+root.data;
     }
+    public static int maxdiameter(Node root){//approach 1-O(n^2)
+        if(root == null)
+        {
+            return 0;
+        }
+        int ld = maxdiameter(root.left);
+        int lh = height(root.left);
+        int rd = maxdiameter(root.right);
+        int rh = height(root.right);
+        int currdia = lh+rh+1;
+        return Math.max(Math.max(ld,rd),currdia);
+    }
+    public static class Info{
+        int dia;
+        int height;
+
+        public Info(int dia,int height){
+            this.dia = dia;
+            this.height= height;
+        }
+    }
+    public static Info Maxdiameter(Node root){//approach -2 -O(n)
+        if(root==null)
+        {
+            return new Info(0,0);
+        }
+        Info leftInfo = Maxdiameter(root.left);
+        Info rightInfo = Maxdiameter(root.right);
+        int diam = Math.max(Math.max(leftInfo.dia,rightInfo.dia),leftInfo.height+rightInfo.height+1);
+        int ht =Math.max(leftInfo.height,rightInfo.height)+1;
+        return new Info(diam,ht);
+    }
 
     public static void main(String[] args) {
         Node root = new Node(1);
@@ -61,5 +93,8 @@ public class FindHeightofTree {
         System.out.println("No. of nodes in the give tree: "+countnodes(root));
         System.out.println("Sum of all nodes in the give tree: "+sumofnodes(root));
         printTree(root);
+        System.out.println();
+        System.out.println("the max diameter of the given tree: "+maxdiameter(root));
+        System.out.println("the max diameter of the given tree: "+Maxdiameter(root).dia);
     }
 }
