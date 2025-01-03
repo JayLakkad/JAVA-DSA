@@ -20,13 +20,14 @@ public class TopViewofTree {
     }
     public static void topview(Node root){
         //level order traversal
-        Queue<Info>q = new LinkedList<>();
-        HashMap<Integer,Node>map = new HashMap<>();
-        int min=0;
-        int max = 0;
-        q.add(new Info(root,0));
-        q.add(null);
-        while(!q.isEmpty()){
+       Queue<Info>q = new LinkedList<>();
+       HashMap<Integer,Node>map  = new HashMap<>();
+       q.add(new Info(root,0));
+       q.add(null);
+       int min= 0;
+       int max = 0;
+       while (!q.isEmpty())
+       {
             Info curr = q.remove();
             if(curr == null){
                 if(q.isEmpty()){
@@ -36,7 +37,7 @@ public class TopViewofTree {
                     q.add(null);
                 }
             }
-            else {
+            else{
                 if(!map.containsKey(curr.hd)){
                     map.put(curr.hd,curr.node);
                 }
@@ -44,18 +45,19 @@ public class TopViewofTree {
                     q.add(new Info(curr.node.left,curr.hd-1));
                     min = Math.min(min,curr.hd-1);
                 }
-                if(curr.node.right!=null){
+                if(curr.node.right!=null)
+                {
                     q.add(new Info(curr.node.right,curr.hd+1));
-                    max = Math.max(max,curr.hd+1);
+                    max =Math.max(max,curr.hd+1);
                 }
             }
-        }
+       }
+        
         for(int i =min;i<=max;i++){
             System.out.print(map.get(i).data+" ");
         }
         System.out.println();
     }
-    
     public static void main(String[] args) {
         Node root = new Node(1);
         root.left = new Node(2);
@@ -68,3 +70,6 @@ public class TopViewofTree {
 
     }
 }
+    
+   
+
