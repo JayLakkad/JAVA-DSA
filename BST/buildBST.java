@@ -156,7 +156,7 @@ public class buildBST {
         int [] arr = {8,5,3,6,10,11,14};
         Node root = null;
         for(int i =0 ;i<arr.length;i++)
-        {
+        { 
             root = insert(root,arr[i]);
         }
         inorder(root);
