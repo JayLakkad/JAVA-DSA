@@ -1,5 +1,5 @@
-
-import java.util.PriorityQueue;
+package Heap;
+import java.util.*;
 
 public class SlidingWindowMaximum {
     public static class Pair implements Comparable<Pair>{
