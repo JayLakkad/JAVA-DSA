@@ -58,7 +58,7 @@ public class HasPath {
     }
     public static void main(String[] args) {
         int V=7;
-        ArrayList<Edge>graph[] = new ArrayList[V];
+        ArrayList<Edge>graph[] = new ArrayList[V]; 
         createGraph(graph);
         System.out.println(Haspath(graph, 0, 4, new boolean[V]));
     }
