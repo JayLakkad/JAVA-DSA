@@ -87,6 +87,7 @@ public class Graph {
        int V=7;
        ArrayList<Edge>[]graph =new ArrayList[V];
        createGraph(graph);
+       
        bfs(graph);
        System.out.println();
        dfs(graph);

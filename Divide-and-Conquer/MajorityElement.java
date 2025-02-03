@@ -1,4 +1,4 @@
-class MajorityElementSolution {
+class MajorityElement {
     public int majorityElement(int[] nums) {
         return majorityelement(nums,0,nums.length-1);
     }

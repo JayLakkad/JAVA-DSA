@@ -1,3 +1,28 @@
+
+/**
+ * The DiagonalSum class provides a method to calculate the sum of the diagonals of a 2D square matrix.
+ * 
+ * The `diagonalsum` method calculates the sum of the primary and secondary diagonals of a given 2D array.
+ * 
+ * The primary diagonal consists of elements where the row index is equal to the column index.
+ * The secondary diagonal consists of elements where the sum of the row index and column index is equal to the size of the matrix minus one.
+ * 
+ * The method uses a linear time complexity approach to calculate the sum of the diagonals.
+ * 
+ * Example usage:
+ * <pre>
+ * {@code
+ * int [][]matrix= {{1,2,3},{4,5,6},{7,8,9}};
+ * System.out.println("The sum of the diagonals is: "+diagonalsum(matrix));
+ * }
+ * </pre>
+ * 
+ * The above example will output:
+ * The sum of the diagonals is: 25
+ * 
+ * @param arr the 2D array representing the square matrix
+ * @return the sum of the primary and secondary diagonals
+ */
 public class DiagonalSum {
     public static int diagonalsum(int [][] arr)
     {

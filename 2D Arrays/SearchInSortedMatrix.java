@@ -1,3 +1,4 @@
+
 public class SearchInSortedMatrix {
     public static boolean SortedMatrix(int [][]arr,int key)//staircase search
     {

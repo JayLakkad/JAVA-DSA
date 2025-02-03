@@ -1,0 +1,44 @@
+7 Important Qs:-
+
+Fibonacci:-
+-Climbing Stairs
+-Number factors
+-Min jumps to reach the end
+-Min jumps with cost
+-House thief
+
+0-1 Knapsack:
+-Subset Sum
+-Equal Subset sum partition
+-min subset sum difference
+-count of subset sum
+-target sum
+
+Unbounded Knapsack:
+-rod cutting
+-coin change
+-min coin change
+-max ribbon cut
+
+LCS(Longest common subsequence):-
+-longest common substring
+-edit distance
+-box stacking
+-longest increasing subsequence
+-longest bitonic subsequence
+-subsequence pattern matching
+-min add/delete to convert
+-one string to another
+
+Kadane's Algorithm(Arrays)
+
+Catalan Number:-
+-no. of BSTs
+-N parantheses
+-convex polygons
+-disjoint chords
+-catalan triangle
+-mountain ranges
+-Dyck works
+
+DP on Grid(2D Arrays)
