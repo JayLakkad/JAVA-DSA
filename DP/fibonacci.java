@@ -1,4 +1,6 @@
-class Fibonacci {
+package DP;
+
+class FibonacciCalculator {
     public static int fib(int n,int f[] ){//O(n)
         if(n==0 || n==1){
             return n;
