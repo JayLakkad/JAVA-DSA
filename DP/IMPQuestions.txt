@@ -41,4 +41,5 @@ Catalan Number:-
 -mountain ranges
 -Dyck works
 
-DP on Grid(2D Arrays)
+DP on Grid(2D Arrays):-
+-Matrix Chain Multiplication 
