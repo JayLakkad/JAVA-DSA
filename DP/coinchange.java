@@ -1,7 +1,7 @@
 package DP;
 
 public class coinchange {
-    public static int coinchange(int coins[],int sum){
+    public static int calculateCoinChange(int coins[], int sum){
         int n = coins.length;
         int dp[][] = new int[n+1][sum+1];
 
@@ -29,6 +29,6 @@ public class coinchange {
     public static void main(String[] args) {
         int coins[]= {1,2,5};
         int sum =5;
-        System.out.println(coinchange(coins,sum));
+        System.out.println(calculateCoinChange(coins, sum));
 }
 }
