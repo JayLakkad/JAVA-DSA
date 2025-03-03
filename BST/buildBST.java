@@ -73,6 +73,7 @@ public class buildBST {
             root.left = delete(root.left,val);
         }
         else{
+            
             //case 1 : leaf node
             if(root.left == null && root.right == null)
             {
